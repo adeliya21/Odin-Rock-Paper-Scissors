@@ -1,0 +1,45 @@
+body {
+    background-color: #deacde;
+}
+
+.selections {
+    /* border: 2px dashed #711971; */
+    display: flex;
+    justify-content: center;
+}
+
+.selection {
+    background: none;
+    border: none;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.selection:hover {
+    transform: scale(1.2);
+}
+
+.results {
+    /* border: 2px dashed #711971; */
+    display: grid;
+    justify-items: center; /* for grid display */
+    /* justify-content: center; for flex display */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns, 1fr equal size columns */
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.result-score {
+    color: #711971;
+    opacity: 50%;
+}
+
+.result-selection {
+    opacity: .5;
+}
+
+.result-selection.winner {
+    opacity: 1;
+    font-size: 4rem;
+}
