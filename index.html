@@ -6,22 +6,46 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <div class="selections">
-        <button class="selection" data-selection="rock">✊</button>
-        <button class="selection" data-selection="paper">🤚</button>
-        <button class="selection" data-selection="scissors">✌️</button>
-    </div>
-    <div class="results">
-        <div>
-            Player:
-            <span class="result-score" data-player-score>0</span>
+    <header class="header">
+        <h1 class="game-title">Rock-Paper-Scissors</h1>
+    </header>
+
+    <main class="main">
+
+        <div class="button-container">
+            <button class="button emoji" data-selection="rock">✊</button>
+            <button class="button emoji" data-selection="paper">🤚</button>
+            <button class="button emoji" data-selection="scissors">✌️</button>
         </div>
-        <div data-final-column>
-            Computer:
-            <span class="result-score" data-computer-score>0</span>
+    
+        <div class="results-container">
+            <div class="result">
+                <p id="playerScore">Player: 0</p>
+                <div id="playerEmoji">👤</div>
+            </div>
+            <div class="result">
+                <p id="computerScore">Computer: 0</p>
+                <div id="computerEmoji">🤖</div>
+            </div>
         </div>
-        <!-- <div class="result-selection winner">✊</div>
-        <div class="result-selection">✌️</div> -->
+
+        <div class="message-container">
+            <p id="who-won">Choose your weapon</p>
+            <p id="why-won">Play until 3</p>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer-link">~ footer ~</p>
+    </footer>
+
+
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn btn-restart" id="restartBtn">Play again</button>
     </div>
+    <div class="overlay" id="overlay"></div>
+
 </body>
 </html>
