@@ -1,7 +1,7 @@
 # Rock-Paper-Scissors
 
 ## About
-Rock-Paper-Scissors game made during the foundations course on the Odin Project. It uses JavaScript to modify and add elements on the page.
+Rock-Paper-Scissors game made during the Foundations course on The Odin Project. It uses JavaScript to modify and add elements on the page.
 
 ## Links
 
